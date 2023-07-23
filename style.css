@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Playfair Display', serif;
+}
+
+/* Image Gallery */
+
+#image-gallery {
+    position: relative;
+}
+
+#image-gallery::before {
+    content: "";
+    position: absolute;
+    background: url("/images/brush-lg.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+#gallery-images {
+    background: linear-gradient(to right,white,black,white);
+}
+
+
+#gallery-images > div{
+    width: 25%;
+    height: 100%;
+}
+
+#gallery-images img {
+    opacity: .9 !important;
+    object-fit: cover;
+}
+
+.golden_bell {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top:30%;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* Image Gallery End */
+
+/* Navbar Anchor */
+.navbar-collapse a {
+    font-size: 1.2rem !important;
+    color: white !important;
+    margin:0 10px !important;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    color: black!important;
+}
+
+/* What to See */
+#wtsee h2, .wts-t{
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    margin-bottom: 5rem !important;
+}
+
+#wtsee h2::after, .wts-t::after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    left: 50%;
+    height: .09rem;
+    background-color: #28a745;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#wtsee h1, #wts-main h1:first-child{
+    font-size: 3.8rem;
+}
+
+#wtsee h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#wtsee p {
+    font-size: 1.5rem;
+}
+
+#navilper {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: 2;
+}
+
+/* What to See End */
+
+/* Where to Stay */
+
+/* Collection Rows */
+.collections .row {
+    margin: .5rem 0 !important;
+}
+
+.collections a {
+    background-color: #28a745;
+    color: white ;
+}
+
+/* Where to Stay End */
+
+/* About */
+
+/* Header */
+
+#hab {
+    background:url(./images/CabuyaoTownPlazajf7455_24.jpg),linear-gradient(to right,black,black) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hab h1 {
+    font-size: 8em !important;
+    text-shadow: 0 0 5px black;
+}
+
+/* Header End */
+
+/* Navbar Indicatior */
+
+.at {
+    position: relative;
+}
+
+.at::after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    left: 50%;
+    height: .09rem;
+    background-color: white;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+/* Navbar Indicator End */
+
+.at::before {
+    background-color: red !important;
+}
+
+@media only screen and (max-width:992px) {
+    /* Gallery Images */
+    #gallery-images div:nth-child(1) {
+        width: 33.33%;
+    }
+
+    #gallery-images div:nth-child(2) {
+        width: 33.33%;
+    }
+    
+    #gallery-images div:nth-child(3) {
+        width: 33.33%;
+        clip-path: none !important;
+    }
+
+    #gallery-images div:nth-child(4) {
+        display:none;
+    }
+    /* Gallery Images End */
+    /* About Header */
+    #hab h1 {
+        font-size: 7rem !important;
+        margin-top: 6rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Gallery Images */
+    #gallery-images div:nth-child(1) {
+        width: 50%;
+    }
+
+    #gallery-images div:nth-child(2) {
+        width: 50%;
+    }
+    
+    #gallery-images div:nth-child(3) {
+        display: none;
+    }
+
+    #gallery-images div:nth-child(4) {
+        display:none;
+    }
+    /* Gallery Images End */
+
+    /* Where Stay Collection Container */
+    .collections img {
+        width: 100% !important;
+    }
+
+    /* About Header */
+     #hab h1 {
+        font-size: 4rem !important;
+        margin-top: 8rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Gallery Images */
+    #gallery-images div:nth-child(1) {
+        display: none;
+    }
+
+    #gallery-images div:nth-child(2) {
+        width: 100%;
+        clip-path: none !important;
+    }
+    
+    #gallery-images div:nth-child(3) {
+        display: none;
+    }
+
+    #gallery-images div:nth-child(4) {
+        display:none;
+    }
+    /* Gallery Images End */
+}
