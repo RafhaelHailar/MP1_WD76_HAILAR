@@ -10,6 +10,7 @@ body {
 
 #image-gallery {
     position: relative;
+    margin-bottom: 5rem;
 }
 
 #image-gallery::before {
@@ -53,7 +54,7 @@ body {
 
 /* Navbar Anchor */
 .navbar-collapse a {
-    font-size: 1.2rem !important;
+    font-size: 1.6rem !important;
     color: white !important;
     margin:0 10px !important;
 }
@@ -118,6 +119,10 @@ body {
     color: white ;
 }
 
+#wts-main h3 {
+    font-weight: 700;
+}
+
 /* Where to Stay End */
 
 /* About */
@@ -159,6 +164,8 @@ body {
 .at::before {
     background-color: red !important;
 }
+
+
 
 @media only screen and (max-width:992px) {
     /* Gallery Images */
