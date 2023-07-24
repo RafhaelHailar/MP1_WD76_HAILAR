@@ -11,6 +11,7 @@ body {
 #image-gallery {
     position: relative;
     margin-bottom: 5rem;
+    background-color: rgba(0,0,0,0.01);
 }
 
 #image-gallery::before {
@@ -65,6 +66,10 @@ body {
 }
 
 /* What to See */
+#wtsee {
+    box-shadow: 0 0 10px 0 gray;
+}
+
 #wtsee h2, .wts-t{
     position: relative;
     width: fit-content;
@@ -74,7 +79,11 @@ body {
     margin-bottom: 5rem !important;
 }
 
-#wtsee h2::after, .wts-t::after {
+.wtsee-at {
+    position: relative;
+}
+
+#wtsee h2::after, .wts-t::after,.wtsee-at::after{
     position: absolute;
     content: "";
     width: 40%;
@@ -83,6 +92,12 @@ body {
     background-color: #28a745;
     bottom: 0;
     transform: translateX(-50%);
+}
+
+.wtsee-at::after {
+    width: 100%;
+    left: 0;
+    transform: none;
 }
 
 #wtsee h1, #wts-main h1:first-child{
@@ -103,6 +118,11 @@ body {
     bottom: 4rem;
     right: 4rem;
     z-index: 2;
+    display: none;
+}
+
+#navilper a {
+    font-size: 1.4rem !important;
 }
 
 /* What to See End */
@@ -111,7 +131,7 @@ body {
 
 /* Collection Rows */
 .collections .row {
-    margin: .5rem 0 !important;
+    margin: .7rem 0 !important;
 }
 
 .collections a {
@@ -189,7 +209,6 @@ body {
     /* About Header */
     #hab h1 {
         font-size: 7rem !important;
-        margin-top: 6rem !important;
     }
 }
 
@@ -220,7 +239,6 @@ body {
     /* About Header */
      #hab h1 {
         font-size: 4rem !important;
-        margin-top: 8rem !important;
     }
 }
 
@@ -243,4 +261,7 @@ body {
         display:none;
     }
     /* Gallery Images End */
+    .abt-logo {
+        width: 20rem !important;
+    }
 }
